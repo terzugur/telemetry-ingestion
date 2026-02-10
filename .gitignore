@@ -1,0 +1,32 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Build output
+dist/
+
+# Test coverage
+coverage/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Certificates and private keys (NEVER commit these!)
+*.pem
+*.crt
+*.key
+*.pfx
+*.p12
+certs/
