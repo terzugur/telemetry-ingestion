@@ -212,7 +212,7 @@ export class TelemetryServiceStack extends cdk.Stack {
     this.iotRule = new iot.CfnTopicRule(this, 'TelemetryIoTRule', {
       ruleName: 'telemetry_rule',
       topicRulePayload: {
-        sql: "SELECT * FROM 'telemetry/+' WHERE chargerId IS NOT NULL AND timestamp IS NOT NULL",
+        sql: "SELECT * FROM 'telemetry/+'",
         description: 'Route telemetry events from IoT chargers to Validator Lambda',
         actions: [
           {
@@ -249,8 +249,6 @@ export class TelemetryServiceStack extends cdk.Stack {
       description: 'API for querying telemetry data from IoT chargers',
       deployOptions: {
         stageName: 'prod',
-        loggingLevel: apigateway.MethodLoggingLevel.INFO,
-        dataTraceEnabled: true,
         metricsEnabled: true,
       },
       defaultCorsPreflightOptions: {
