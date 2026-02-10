@@ -7,7 +7,6 @@ Quick guide for deploying the Telemetry Service to AWS using AWS CDK.
 - AWS CDK CLI: `npm install -g aws-cdk`
 
 ## Quick Start
-
 ```bash
 # 1. Install dependencies
 npm install
@@ -15,17 +14,15 @@ npm install
 # 2. Build
 npm run build
 
-# 3. Bootstrap CDK (one-time per account/region)
-cdk bootstrap
-
-# 4. Deploy
-cdk deploy
+# 3. AWS Setup
+aws configure
 ```
 
-## AWS Setup
+# 4. Bootstrap CDK (one-time per account/region)
+cdk bootstrap
 
-```bash
-aws configure
+# 5. Deploy
+cdk deploy
 ```
 
 ### Required Permissions
