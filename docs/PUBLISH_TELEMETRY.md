@@ -10,7 +10,7 @@ This guide walks you through publishing telemetry messages to the system to test
 5. Enter message payload:
 ```json
 {
-  "chargerId": "CHG001",
+  "chargerId": "charger-device-001",
   "timestamp": "2026-02-10T19:58:24.656Z",
   "data": {
     "voltage": 240.5,
