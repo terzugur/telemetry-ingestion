@@ -32,7 +32,7 @@ function enrichEvent(validatedEvent: ValidatedEvent): ProcessedEvent {
   return {
     eventId: randomUUID(), // Generate unique eventId
     chargerId: validatedEvent.chargerId,
-    timestamp: validatedEvent.timestamp,
+    timestamp: new Date(validatedEvent.timestamp),
     data: validatedEvent.data,
     metadata: {
       receivedAt: now,
