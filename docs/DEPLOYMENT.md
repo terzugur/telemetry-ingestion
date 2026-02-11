@@ -58,7 +58,7 @@ curl https://YOUR_API_ENDPOINT/prod/health
 ```
 
 ### 3. Configure IoT Devices
-See [IOT_DEVICE_SETUP.md](IOT_DEVICE_SETUP.md) for publish some telemetry data.
+See [PUBLISH_TELEMETRY.md](PUBLISH_TELEMETRY.md) for publish some telemetry data.
 
 # Test end-to-end
 curl https://YOUR_API_ENDPOINT/prod/telemetry/<chargerId>
